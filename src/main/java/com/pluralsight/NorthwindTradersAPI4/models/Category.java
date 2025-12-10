@@ -4,16 +4,23 @@ public class Category {
     Integer categoryId;
     String categoryName;
 
-    public Category(int categoryId, String categoryName) {
+    public Category() {
+    }
+
+    public Category(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public Category(Integer categoryId, String categoryName) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
     }
 
-    public int getCategoryId() {
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 

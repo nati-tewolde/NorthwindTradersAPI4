@@ -6,18 +6,27 @@ public class Product {
     private int categoryId;
     private double unitPrice;
 
-    public Product(int productId, String productName, int categoryId, double unitPrice) {
+    public Product() {
+    }
+
+    public Product(String productName, int categoryId, double unitPrice) {
+        this.productName = productName;
+        this.categoryId = categoryId;
+        this.unitPrice = unitPrice;
+    }
+
+    public Product(Integer productId, String productName, int categoryId, double unitPrice) {
         this.productId = productId;
         this.productName = productName;
         this.categoryId = categoryId;
         this.unitPrice = unitPrice;
     }
 
-    public int getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(Integer productId) {
         this.productId = productId;
     }
 
